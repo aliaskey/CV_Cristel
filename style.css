@@ -1,0 +1,141 @@
+/* Réinitialisation de base */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #bdbdbd;
+}
+
+/* Styles de l'en-tête et du pied de page */
+header, footer {
+    background-color: #4B0082;
+    color: #ffd700;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Styles de la navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #FF7F50;
+    overflow: hidden;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 16px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #ffd700;
+    color: #4B0082;
+}
+
+/* Styles généraux des sections */
+section {
+    border: 1px solid #ccc;
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+}
+
+/* Styles des titres */
+h1, h2, h3, .card-title {
+    color: #FFD700;
+}
+
+/* Styles des images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mise en page de la section expérience */
+.row_exp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column_exp {
+    flex: 1 0 48%;
+    margin-bottom: 20px;
+}
+
+/* Responsive design pour les petits écrans */
+@media screen and (max-width: 600px) {
+    .column_exp {
+        flex-basis: 100%;
+    }
+}
+
+/* Styles des cartes */
+.card {
+    background: #fff;
+    border-radius: 2px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+/* Styles des grilles pour les compétences */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 10px;
+}
+
+.skills-grid img:hover {
+    transform: scale(1.1);
+}
+
+/* Styles des actions des cartes */
+.card-action {
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Styles pour assombrir le texte */
+.text-darken-2 {
+    color: #666;
+}
+
+/* Styles pour les éléments activables */
+.activator {
+    font-weight: bold;
+    color: #FF7F50;
+}
+.row.text-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.grid-container {
+    flex-basis: 20%; /* Chaque image prendra 20% de l'espace disponible */
+    margin: 5px; /* Conserve un petit espace entre les images */
+    padding: 5px; /* Espace intérieur */
+    box-sizing: border-box;}
+
+.img-fixed-size {
+        width: 50%; /* Réduit la largeur de l'image par rapport à son conteneur */
+        height: auto; /* Garde le ratio d'aspect de l'image */   }  
